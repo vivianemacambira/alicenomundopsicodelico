@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css?family=Mountains+of+Christmas');
+@import url('https://fonts.googleapis.com/css?family=Abel');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  z-index: 0;
+}
+
+body, html{
+  width: 100%;
+  font-family: 'Abel', sans-serif;
+  overflow: hidden;
+}
+
+h1{
+  font-size:150px;
+    font-family: 'Mountains of Christmas', cursive;
+    color: linear-gradient(45deg, #7794ff, #44107A, #FF1361, #FFF800);
+}
+
+h2{
+  font-size:23px;
+}
+
+p{
+  font-size: 17px;
+}
+
+a, a:link, a:visited{
+  color: white;
+  text-decoration: none;
+}
+
+nav{
+  width: 100%;
+}
+
+nav:after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+nav ul{
+  width: 100%;
+}
+
+nav ul li{
+  background-color: grey;
+  color: white;
+  display: block;
+  float: left;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  width: 25%;
+}
+
+nav ul li:hover{
+  background-color: black;
+  cursor: pointer;
+}
+
+main{
+  margin-left: 0%;
+  transition: .5s ease;
+  width: 400%;
+}
+
+section.aba1{
+  height: 100vh;
+  width: 25%;
+  float: left;
+}
+
+section.aba2{
+  height: 100vh;
+  width: 25%;
+  float: left;
+}
+
+section.aba3{
+  height: 100vh;
+  width: 25%;
+  float: left;
+}
+
+section.aba4{
+  background-image: url(../img/fundo2.jpg);
+  height: 100vh;
+  width: 25%;
+  float: left;
+}
+
+
+
+#title{
+  text-align: center;
+  width: 100%;
+  top: 50%;
+  color: rgb(255, 255, 255);
+  font-size: 3em;
+  position: fixed;
+  z-index: 60;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  text-decoration: none;
+  display: inline-block;
+  background-size: 120% 100%;
+  cursor: pointer;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -ms-background-clip: text;
+  -ms-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-image: linear-gradient(45deg, #7794ff, #44107A, #FF1361, #FFF800);
+}
+
+#title:hover {
+animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+#triangle-up {
+  width: 0;
+  height: 0;
+  border-left: 100vw solid black;
+  border-right: 0 solid;
+  border-bottom: 100vh solid;
+  transition: 2s ease-in-out;
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  right: 0;
+}
+
+
+#triangle-down{
+  width: 0;
+  height: 0;
+  border-left: 0 solid ;
+  border-right: 100vw solid black;
+  border-top: 100vh solid;
+  transition: 2s ease-in-out;
+  float: left;
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  top: 0;
+}
+
+/* #button{
+  position: fixed;
+  z-index:60;
+  opacity: 1;
+  width: 11vh;
+  height: 11vh;
+  bottom: 100px;
+  left: calc(50% - 5.5vh);
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  font-family: 'Raleway', sans-serif;
+  color: rgb(253, 61, 221);
+  transform-style: preserve-3d;
+  font-size: 2em;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+#button:focus{
+  outline: 0;
+}
+
+#button:hover{
+  transform: scale(1.2);
+}
+
+#button:active{
+  transform: scale(1.1);
+}
+
+****/
+
+#triangle-down.usenand{
+  border-left: 0 solid transparent;
+  border-right: 0 solid transparent;
+  border-top: 100vh solid white;
+  transition: 2s ease-in-out;
+}
+
+#triangle-up.usenand{
+  border-left: 0 solid transparent;
+  border-right: 0 solid transparent;
+  border-bottom: 100vh solid white;
+  transition: 2s ease-in-out;
+}
+
+.Imagem-Fundo1{
+  background-image: url(../img/fundo.png);
+  height: 100vh;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Imagem-Fundo2{
+  background-image: url(../img/gato.jpg);
+  height: 100vh;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Imagem-Fundo3{
+  background-image: url(../img/chapeleiro.jpg);
+  height: 100vh;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Texto-Qualquer{
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  color: white;
+  font-weight: bold;
+  border: 10px solid #f1f1f1;
+  float: left;
+  margin-top: -8.5%;
+  margin-left: 50%;
+  transform: translate(-50%, -100%);
+  z-index: 1;
+  width: 80%;
+  line-height: 830%;
+  text-align: center;
+}
+
+svg{
+  float: left;
+  margin-left: 50%;
+  transform: translate(-50%, -100%);
+  z-index: 1;
+  width: 80%;
+  line-height: 830%;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+}
+#formulario{ 
+  font-size:23px;
+  position: relative;
+  left:500px;
+  bottom:300px;
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+  width:350px;
+  height:380px;
+  box-shadow: 10px 10px 10px 5px black;
+  background-image: : #f0f0f0;
+  visibility: hidden;
+}
+#formulario .email{
+  position: relative;
+  top:50px;
+}
+#formulario .button{
+  position: relative;
+  top:125px;
+}
+#formulario .Quantidade{
+  position: relative;
+  top:90px;
+}
+#Info{
+  border: 10px solid white;
+    background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.4);
+  width:33%;
+  position: relative;
+  text-align: center;
+  float: left;
+  left: 450px;
+  top:100px;
+  height: 470px;
+  color: white;
+}
+#Esp{
+  position: relative;
+  top:15px;
+}
+#Alice{
+  position: relative;
+  top:15px;
+}
+#Dire{
+  position: relative;
+  top:30px;
+}
+#Mateus{
+  position: relative;
+  top:30px;
+}
+#Ali{
+  position: relative;
+  top:45px;
+}
+#Onde{
+  position: relative;
+  top:60px;
+}
+#Teatro{
+  position: relative;
+  top:60px;
+}
+#Quando{
+  position: relative;
+  top:75px;
+}
+#Ap1Data{
+  position: relative;
+  top:112px;
+  right:100px;
+}
+#Ap1Hora{
+  position: relative;
+  top:112px;
+  right:100px;
+}
+#Ap2Data{
+  position: relative;
+  top:76px;
+  left:100px;
+}
+#Ap2Hora{
+  position: relative;
+  top:76px;
+  left: 100px;
+}
+#button2{
+  position: relative;
+  top:105px;
+  left: 15px;
+}
+#rd1{
+  position: relative;
+  right:180px;
+  top: 10px;
+  z-index: 1;
+}
+#rd2{
+  position: relative;
+  left:15px;
+  top: 10px;
+  z-index: 1;
+}
+#op1{
+  position: relative;
+  right:100px;
+  bottom: 12px;
+}
+#op2{
+  position: relative;
+  left:112px;
+  bottom: 29px;
+}

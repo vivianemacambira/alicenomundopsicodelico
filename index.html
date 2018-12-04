@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site Jam Horiz</title>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/aos.css">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas" rel="stylesheet">
+
+</head>
+<body>
+  <div data-aos="fade-up" id="title">Acho que estou ficando louca
+  </div>
+  <div id="triangle-down"></div>
+  <div id="triangle-up"></div>
+  <nav>
+    <ul>
+      <li data-section="ABA1">
+        <a href="#">ALICE </a>
+      </li>
+      <li data-section="ABA2">
+        <a href="#">CHESHIRE</a>
+      </li>
+      <li data-section="ABA3">
+        <a href="#">CHAPELEIRO</a>
+      </li>
+      <li data-section="ABA4">
+        <a href="#">PEÇA</a>
+      </li>
+    </ul>
+  </nav>
+  <main>
+    <section class="aba1">
+      <div class="Imagem-Fundo1"></div>
+      <div class="Texto-Qualquer">
+        <h2>Meus sonhos sempre são meio</h2>
+        <h1>LOUCOS</h1>
+        <p> Teria que ser meio louca para ter sonhos meio loucos</p>
+      </div>
+    </section>
+    <section class="aba2">
+             <div class="Imagem-Fundo2"></div>
+      <div class="Texto-Qualquer">
+        <h2>Eu não sou</h2>
+        <h1>LOUCO</h1>
+        <p> Minha realidade é apenas diferente da sua</p>
+      </div>
+    </section>
+    <section class="aba3">
+            <div class="Imagem-Fundo3"></div>
+      <div class="Texto-Qualquer">
+        <h2>Sim, você é louco</h2>
+        <h1>LOUQUINHO</h1>
+        <p> Mas vou te contar um segredo: As melhores pessoas são assim</p>
+      </div>
+    </section>
+    <section class="aba4">
+        
+      <div id="Info">
+      <h2>Grupo Contra-regra</h2>
+      <h3 id="Esp">Espetáculo:</h3>
+      <p id="Alice">Alice No Mundo Psicodélico</p>
+      <h3 id="Dire">Diretor:</h3>
+      <p id="Mateus">Matheus Fernandes</p>
+      <p id="Ali">Alice irá te envolver e levar, para, junto com ela,<br> adentrar em um mundo onírico, com uma temática<br> baseada nos movimentos hippie dos anos 70 cheio<br> de fantasias e muita imaginação.</p>
+      <h3 id="Onde">Onde:</h3>
+      <p id="Teatro">Teatro Dragão do Mar</p>
+      <h3 id="Quando">Quando:</h3>
+      <p id="Ap1Data">7 e 8 de dezembro</p> 
+      <p id="Ap1Hora">sessões às 19h e 21h</p>
+      <p id="Ap2Data">21 e 22 de dezembro</p>
+      <p id="Ap2Hora">sessões às 19h e 21h</p>
+      <!-- <input id="button2" type="button" value="Quero assistir!"> -->
+      <button id="button2" onclick="changeVisibility()">Quero assistir!</button>
+      <input id="rd1" type="radio" name="Apresentaçao">
+      <input id="rd2" type="radio" name="Apresentaçao">
+      <p id="op1">Opção 1</p>
+      <p id="op2">Opção 2</p>
+      </div>
+      <div id="formulario">
+      <form action="/pagina-processa-dados-do-form" method="post">
+          <div class="name">
+              <label for="name">Nome:<br></label>
+              <input type="text" id="name" size="44" maxlength="44"/>
+          </div>
+          <div class="email">
+              <label for="email">E-mail:<br></label>
+              <input type="email" id="email" size="44" maxlength="44"/>
+          </div>
+          <div class="Quantidade">
+              <label for="Quantidade">Quantidade de pessoas que irá levar:<br></label>
+              <input type="text" id="Quantidade" size="44" maxlength="2"/>
+          </div>
+          <div class="button">
+              <input type="button" name="envia" value="Enviar" onclick="mensagem1()">
+          </div>
+      </form> 
+
+  </section>
+    </main>
+</body>
+</html>
+<script
+
+src="js/index.js">
+  
+</script>
+
+<script src ="css/aos.js"></script>
+      <script>
+        AOS.init({
+          offset: 200,
+          duration: 2000,
+        });
+      </script>
+
+
+
+
+
+
+
